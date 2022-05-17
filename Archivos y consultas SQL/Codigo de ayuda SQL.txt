@@ -1,0 +1,13 @@
+Para crear una tabla con un auto incrementable ID:
+
+create table NombreTabla
+(
+ID int identity (1,1) not null primary key
+);
+go
+
+Para insertar un datos a una tabla:
+
+insert into NombreTabla(NombreCampo) values('valor')
+
+--control + shit + R para refresh el transact

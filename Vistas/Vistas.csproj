@@ -1,0 +1,402 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F525B29B-CCE5-408F-9772-989ABE32BFBD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vistas</RootNamespace>
+    <AssemblyName>Vistas</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44350</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Productos2.aspx.cs">
+      <DependentUpon>Productos2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Productos2.aspx.designer.cs">
+      <DependentUpon>Productos2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\AdminPresupuestos.aspx.cs">
+      <DependentUpon>AdminPresupuestos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\AdminPresupuestos.aspx.designer.cs">
+      <DependentUpon>AdminPresupuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\AdminProductos.aspx.cs">
+      <DependentUpon>AdminProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\AdminProductos.aspx.designer.cs">
+      <DependentUpon>AdminProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\AdminVentas.aspx.cs">
+      <DependentUpon>AdminVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\AdminVentas.aspx.designer.cs">
+      <DependentUpon>AdminVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Cuenta.Master.cs">
+      <DependentUpon>Cuenta.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Cuenta.Master.designer.cs">
+      <DependentUpon>Cuenta.Master</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\mis_compras.aspx.cs">
+      <DependentUpon>mis_compras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\mis_compras.aspx.designer.cs">
+      <DependentUpon>mis_compras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Logiin.aspx.cs">
+      <DependentUpon>Logiin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Logiin.aspx.designer.cs">
+      <DependentUpon>Logiin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Franquisia.aspx.cs">
+      <DependentUpon>Franquisia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Franquisia.aspx.designer.cs">
+      <DependentUpon>Franquisia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\ModificaContraseña.aspx.cs">
+      <DependentUpon>ModificaContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\ModificaContraseña.aspx.designer.cs">
+      <DependentUpon>ModificaContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Presupuestos.aspx.cs">
+      <DependentUpon>Presupuestos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Presupuestos.aspx.designer.cs">
+      <DependentUpon>Presupuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Productoss.aspx.cs">
+      <DependentUpon>Productoss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Productoss.aspx.designer.cs">
+      <DependentUpon>Productoss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Registrarse.aspx.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Registrarse.aspx.designer.cs">
+      <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XRegistro.aspx.cs">
+      <DependentUpon>XRegistro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XRegistro.aspx.designer.cs">
+      <DependentUpon>XRegistro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Xadmin_ventas.aspx.cs">
+      <DependentUpon>Xadmin_ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Xadmin_ventas.aspx.designer.cs">
+      <DependentUpon>Xadmin_ventas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XAdmin_presupuestos.aspx.cs">
+      <DependentUpon>XAdmin_presupuestos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XAdmin_presupuestos.aspx.designer.cs">
+      <DependentUpon>XAdmin_presupuestos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\Xadmin_Productos.aspx.cs">
+      <DependentUpon>Xadmin_Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\Xadmin_Productos.aspx.designer.cs">
+      <DependentUpon>Xadmin_Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XCuenta.aspx.cs">
+      <DependentUpon>XCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XCuenta.aspx.designer.cs">
+      <DependentUpon>XCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XAdministrador.aspx.cs">
+      <DependentUpon>XAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XAdministrador.aspx.designer.cs">
+      <DependentUpon>XAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XClientes.aspx.cs">
+      <DependentUpon>XClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XClientes.aspx.designer.cs">
+      <DependentUpon>XClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XConfiguracion.aspx.cs">
+      <DependentUpon>XConfiguracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XConfiguracion.aspx.designer.cs">
+      <DependentUpon>XConfiguracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XFranquisias.aspx.cs">
+      <DependentUpon>XFranquisias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XFranquisias.aspx.designer.cs">
+      <DependentUpon>XFranquisias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XHome.aspx.cs">
+      <DependentUpon>XHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XHome.aspx.designer.cs">
+      <DependentUpon>XHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XLogin.aspx.cs">
+      <DependentUpon>XLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XLogin.aspx.designer.cs">
+      <DependentUpon>XLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\ModificarContraseña.aspx.cs">
+      <DependentUpon>ModificarContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\ModificarContraseña.aspx.designer.cs">
+      <DependentUpon>ModificarContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XPresupuesto.aspx.cs">
+      <DependentUpon>XPresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XPresupuesto.aspx.designer.cs">
+      <DependentUpon>XPresupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YaMaquetado\XProductos.aspx.cs">
+      <DependentUpon>XProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YaMaquetado\XProductos.aspx.designer.cs">
+      <DependentUpon>XProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.png" />
+    <Content Include="2.png" />
+    <Content Include="3.png" />
+    <Content Include="4.png" />
+    <Content Include="5.png" />
+    <Content Include="6.png" />
+    <Content Include="7.png" />
+    <Content Include="8.png" />
+    <Content Include="9.png" />
+    <Content Include="10.png" />
+    <Content Include="11.png" />
+    <Content Include="12.png" />
+    <Content Include="13.png" />
+    <Content Include="14.png" />
+    <Content Include="15.png" />
+    <Content Include="Productos2.aspx" />
+    <Content Include="YaMaquetado\AdminPresupuestos.aspx" />
+    <Content Include="YaMaquetado\AdminProductos.aspx" />
+    <Content Include="YaMaquetado\AdminVentas.aspx" />
+    <Content Include="YaMaquetado\Carrito.aspx" />
+    <Content Include="YaMaquetado\Clientes.aspx" />
+    <Content Include="YaMaquetado\mis_compras.aspx" />
+    <Content Include="YaMaquetado\Logiin.aspx" />
+    <Content Include="YaMaquetado\Franquisia.aspx" />
+    <Content Include="YaMaquetado\Index.aspx" />
+    <Content Include="YaMaquetado\ModificaContraseña.aspx" />
+    <Content Include="YaMaquetado\Presupuestos.aspx" />
+    <Content Include="YaMaquetado\Productoss.aspx" />
+    <Content Include="YaMaquetado\Registrarse.aspx" />
+    <Content Include="YaMaquetado\XRegistro.aspx" />
+    <Content Include="YaMaquetado\Xadmin_ventas.aspx" />
+    <Content Include="YaMaquetado\XAdmin_presupuestos.aspx" />
+    <Content Include="YaMaquetado\Xadmin_Productos.aspx" />
+    <Content Include="YaMaquetado\XCuenta.aspx" />
+    <Content Include="YaMaquetado\XAdministrador.aspx" />
+    <Content Include="YaMaquetado\XClientes.aspx" />
+    <Content Include="YaMaquetado\XConfiguracion.aspx" />
+    <Content Include="YaMaquetado\XFranquisias.aspx" />
+    <Content Include="YaMaquetado\XHome.aspx" />
+    <Content Include="YaMaquetado\XLogin.aspx" />
+    <Content Include="YaMaquetado\ModificarContraseña.aspx" />
+    <Content Include="YaMaquetado\XPresupuesto.aspx" />
+    <Content Include="YaMaquetado\XProductos.aspx" />
+    <Content Include="YaMaquetado\style.css" />
+    <Content Include="TrabajoIntegradorLab3.csproj.user" />
+    <Content Include="TrabajoIntegradorLab3.sln" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TrabajoIntegradorLab3.csproj" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="YaMaquetado\Home.Master" />
+    <Content Include="YaMaquetado\Cuenta.Master" />
+    <Content Include="YaMaquetado\Admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dao\Dao.csproj">
+      <Project>{6ab75cff-6991-4889-9ef6-f550b0ab5442}</Project>
+      <Name>Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{d135ddfb-5583-450c-816f-ab3e938186b9}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{43a9a9c6-0f1e-49f2-a136-7f9abd480ee9}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52359</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44350/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,35 @@
+create procedure spActualizarProducto
+(
+@Cod_Art_Pro char (8),
+@PU_Pro Decimal (8,2) null,
+@Stock int,
+@Categoria char(8),
+@Descripcion varchar(30)
+)
+AS
+UPDATE Productos
+set 
+PU_Pro = @PU_Pro,
+Stock = @Stock ,
+Categoria = @Categoria ,
+Descripcion = @Descripcion
+where Cod_Art_Pro = @Cod_Art_Pro
+return
+
+======================================================
+
+PROCEDIMIENTO PARA ELIMINAR PRODUCTO
+
+create procedure spEliminarProducto
+(
+@Cod_Art_Pro char(8)
+)
+AS
+DELETE FROM Productos
+WHERE Cod_Art_Pro = @Cod_Art_Pro
+return
+
+========================================================
+COMANDO PARA AGREGAR UNA URL DE IMAGEN A LA BASE DE DATOS !!!
+
+ALTER TABLE Productos add Url varchar(50);

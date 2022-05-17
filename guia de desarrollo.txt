@@ -1,0 +1,38 @@
+Mover lo programado al trabajo maquetado. (En proceso)
+Algunas observaciones.
+una vez registrado el usuario redirecciona a una pestaña del trabajo anterior (corregir)
+configurar mostrar el usuario logueado correctamente (sobre escribir el label con alguna variable session.)
+El nombre del registro no toma nombres completos por ejemplo "Federico Ivan"
+Averiguar como mostrar los productos paginados. 
+
+IMPORTANTE
+
+//el listado de productos tiene que tener un buscador arriba o en algun lado y un boton de agregar al carrito en el lado de cliente
+el cliente tiene que poder ver los productos y proceder con la compra y solo ahi se registrara la venta.
+los productos tienen que estar listado de a 5 productos por pagina.
+
+//MOSTRAR EL NOMBRE DEL USUARIO LOGUEADO EN TODAS LAS PAGINAS HASTA QUE SE DESLOGUEA.
+
+Generar carga de productos.
+Averiguar como cargar imagenes en sql
+Cargar productos a la base de datos ahiti
+Dejar funcional el buscador de productos
+Programar en capas la parte de presupuesto.
+-----------------------------------------------------------
+notas importantes
+paginacion de las tablas que mostraba.
+el buscador en todas las ventanas.
+que aparezca el usuario logueado en todas las ventanas.
+guardar los productos en un carrito previo a la venta.
+ ***************************************
+Jere
+Registrarse:
+se debe reducir al 90% para que se vea el boton de "registrarse"
+************************************
+
+sentencia sql para poder buscar productos.
+
+SELECT * FROM demo WHERE hint LIKE '%d%';
+
+Se utiliza primero select * (all) FROM (nombre de la tabla) demo WHERE hint (donde en hint se encuentre) un titulo que en algun lado contenga la letra
+"D"

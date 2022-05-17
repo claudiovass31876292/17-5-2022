@@ -1,0 +1,1 @@
+ALTER TABLE presupuestos ALTER COLUMN Consulta char(500) NULL

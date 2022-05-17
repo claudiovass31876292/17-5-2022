@@ -1,0 +1,29 @@
+ACTUALIZAR SP ACTUALIZAR PRODUCTO 
+IR A EL PROCEDIMIENTO programability/storaged procedures/spactualizarprod 
+click derecho "modify" 
+
+pegar esta parte  IMPORTANTE , REMPLAZAR SOLO LA PARTE QUE DICE ALTER.
+
+ALTER procedure [dbo].[spActualizarProducto]
+(
+@Cod_Art_Pro varchar (50),
+@PU_Pro Decimal (8,2) null,
+@Stock int,
+@Categoria char(8),
+@Descripcion varchar(30),
+@url varchar(50),
+@Estado bit
+)
+AS
+UPDATE Productos
+set 
+PU_Pro = @PU_Pro,
+Stock = @Stock ,
+Categoria = @Categoria ,
+Descripcion = @Descripcion,
+url = @url,
+estado = @Estado
+where Cod_Art_Pro = @Cod_Art_Pro
+return
+
+y ejecutar la consulta 

@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Vistas.YaMaquetado.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <nav class="navbar navbar-light bg-crema">
+      <div class="container">
+        <a class="navbar-brand" href="Index.aspx">
+          <img style="border-radius: 50%;" src="https://scontent.faep23-1.fna.fbcdn.net/v/t1.6435-1/s200x200/90016813_624121981483535_5980709867684364288_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=dbb9e7&_nc_ohc=8z4UarDdW1YAX9GBJKB&_nc_oc=AQkPU6OGG4z2vuOOyo6uFnx39p9qrRhUybSuDXNhGwLRsdaVDh-vnzompEwKjjy7P2A&_nc_ht=scontent.faep23-1.fna&oh=61aeecc908c08384206630ad2fbde358&oe=612718C8" alt="" width="72" height="72" class="d-inline-block align-text-top">
+          Revestimientos A&TI
+        </a>
+          <%--<div class="container">--%>
+          <ul class="nav justify-content-center">
+              <li class="nav-item">
+                
+                    Ingresado como:
+                    <asp:Label ID="lblUsuario" runat="server"></asp:Label>
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Administracion&nbsp; de presupuestos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Administracion de productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Administracion de ventas</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Configuraciones</a>
+              </li>
+              <li class="nav-item">
+                  <%--<a class="nav-link" href="Productoss.aspx">Cerrar sesion</a>--%>             
+                  
+               <%--    <asp:Button ID="Button4" runat="server" Height="35px" Text="Cerrar Sesion" Width="252px" class="nav-link" OnClick="Button4_Click"/> --%>
+              
+              
+              </li>
+            </ul>
+          <%--</div>--%>
+      </div>
+    </nav>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer class="fixed-bottom footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Telefono: 011 7364-0862</span>
+            <a href="https://www.facebook.com/pages/category/Home-Decor/Revestimientos-ATi-399509177278151/" target="_blank"><img style="width: 40px; height: 40px;" src="https://blaisten.vteximg.com.br/arquivos/assets_icons_social-facebook.png" /></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
