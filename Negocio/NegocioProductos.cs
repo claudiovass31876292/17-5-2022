@@ -23,6 +23,7 @@ namespace Negocio
         {
             return true;    
         }
+
         public bool agregarProducto(string codigo_producto,
         string nombre_producto,
         decimal precio_producto,
