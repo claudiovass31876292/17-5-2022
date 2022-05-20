@@ -79,7 +79,7 @@ namespace Dao
             SqlCommand cmd = new SqlCommand(consulta, Conexion);
             SqlDataReader datos = cmd.ExecuteReader();
             if (datos.Read())
-            {
+            {   
                 estado = true;
             }
             return estado;

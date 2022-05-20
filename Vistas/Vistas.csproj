@@ -308,6 +308,7 @@
     <Content Include="YaMaquetado\AdminVentas.aspx" />
     <Content Include="YaMaquetado\Carrito.aspx" />
     <Content Include="YaMaquetado\Clientes.aspx" />
+    <Content Include="YaMaquetado\logo_ayti.jpg" />
     <Content Include="YaMaquetado\mis_compras.aspx" />
     <Content Include="YaMaquetado\Logiin.aspx" />
     <Content Include="YaMaquetado\Franquisia.aspx" />

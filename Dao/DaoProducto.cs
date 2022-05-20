@@ -39,7 +39,7 @@ namespace Dao
 
         public Boolean existeProducto(Productos pro)
         {
-            String consulta = "Select * from producto where NombreProducto='" + pro.get_codigo_producto() + "'";
+            String consulta = "Select * from producto where NombreProducto='" + pro.get_nombre_producto() + "'";
             return ds.existe(consulta);
         }
 
