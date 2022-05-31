@@ -13,10 +13,10 @@ namespace Dao
     {
         String rutaBDAyti = @"Data Source=localhost\sqlexpress;Initial Catalog=Revestimientoayt;Integrated Security=True";
    
-        public AccesoDatos()
-        {
-            // TODO: Agregar aquí la lógica del constructor
-        }
+            public AccesoDatos()
+            {
+                // TODO: Agregar aquí la lógica del constructor
+            }
 
         private SqlConnection ObtenerConexion()
         {
@@ -34,7 +34,7 @@ namespace Dao
 
 
         private SqlDataAdapter ObtenerAdaptador(String consultaSql, SqlConnection cn)
-        {
+            {
             SqlDataAdapter adaptador;
             try
             {
