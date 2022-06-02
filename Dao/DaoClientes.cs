@@ -17,18 +17,23 @@ namespace Dao
         AccesoDatos ds = new AccesoDatos();
         public Clientes  getProducto(Clientes pro)
         {
+            
             DataTable tabla = ds.ObtenerTabla("Clientes", "Select * from Clientes where Dni=" + pro.get_Dni());
-            //pro.set_codigo_producto(Convert.ToInt32(tabla.Rows[0][0].ToString()));
-            pro.set_email_cuenta(tabla.Rows[0][1].ToString());
-            pro.set_Nombre(tabla.Rows[0][2].ToString());
-            pro.set_Apellido(tabla.Rows[0][3].ToString());
-            pro.set_sexo(tabla.Rows[0][4].ToString());
-            pro.set_Usuario_Cli(tabla.Rows[0][5].ToString());
-            pro.set_Dni(tabla.Rows[0][6].ToString());
-            pro.set_Direccion(tabla.Rows[0][7].ToString());
-            pro.set_Usuario_Cli(tabla.Rows[0][8].ToString());
-        
+            if(tabla! null){
+                //pro.set_codigo_producto(Convert.ToInt32(tabla.Rows[0][0].ToString()));
+                pro.set_email_cuenta(tabla.Rows[0][1].ToString());
+                pro.set_Nombre(tabla.Rows[0][2].ToString());
+                pro.set_Apellido(tabla.Rows[0][3].ToString());
+                pro.set_sexo(tabla.Rows[0][4].ToString());
+                pro.set_Usuario_Cli(tabla.Rows[0][5].ToString());
+                pro.set_Dni(tabla.Rows[0][6].ToString());
+                pro.set_Direccion(tabla.Rows[0][7].ToString());
+                pro.set_Usuario_Cli(tabla.Rows[0][8].ToString());
+
+                return pro;
+            }
             return pro;
+            
         }
 
         public Boolean existeCliente(Clientes pro)

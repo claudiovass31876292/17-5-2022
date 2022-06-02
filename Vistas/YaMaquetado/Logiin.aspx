@@ -1,4 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/YaMaquetado/Home.Master" AutoEventWireup="true" CodeBehind="Logiin.aspx.cs" Inherits="Vistas.YaMaquetado.Cuentaa" %>
+
+<script runat="server">
+
+    protected void btnIngresar_Click(object sender, EventArgs e)
+    {
+
+    }
+</script>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
